@@ -12,7 +12,7 @@ public class Screening {
     }
 
     public void printInfo(){
-        System.out.printf("Screening info: screening name - %s, profit - %s", screeningName, profit);
+        System.out.printf("Screening info: screening name - %s, profit - %s%n", screeningName, profit);
         System.out.println("Screening date: ");
         screeningDate.printInfo();
     }

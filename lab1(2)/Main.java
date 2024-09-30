@@ -16,5 +16,26 @@ public class Main {
         movie.printShortInfo();
         System.out.println();
         System.out.println("__________________");
+        
+        
+
+
+        Director director2 = new Director("Christopher", "Nolan", new Date (30,7, 1970));
+        Screening screening3 = new Screening("firstScreening", 11000, new Date(6, 11, 2014));
+        Screening screening4 = new Screening("secondScreening", 15000, new Date(10, 11, 2014));
+        Movie movie2 = new Movie("Interstellar", MovieGenre.DRAMA, director1);
+        movie2.addScreening(screening3);
+        movie2.addScreening(screening4);
+
+        System.out.println("Second Movie");
+        System.out.println("Movie full info: ");
+        movie2.printInfo();
+        System.out.println();
+        System.out.println("__________________");
+
+        System.out.println("Movie short info: ");
+        movie2.printShortInfo();
+        System.out.println();
+        System.out.println("__________________");
     }
 }
