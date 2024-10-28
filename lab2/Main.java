@@ -8,7 +8,7 @@ public class Main {
         movie1.addScreening(screening2);
 
         System.out.println("Movie full info: ");
-        System.out.println(movie1.toString());
+        System.out.println(movie1);
 //        System.out.println();
         System.out.println("__________________");
 
@@ -20,7 +20,7 @@ public class Main {
         movie2.addScreening(screening4);
 
         System.out.println("Movie full info: ");
-        System.out.println(movie2.toString());
+        System.out.println(movie2);
 //        System.out.println();
         System.out.println("__________________");
 
@@ -32,7 +32,7 @@ public class Main {
         movie3.addScreening(screening6);
 
         System.out.println("Movie full info: ");
-        System.out.println(movie3.toString());
+        System.out.println(movie3);
 //        System.out.println();
         System.out.println("__________________");
     }
