@@ -17,9 +17,15 @@ public class Director {
         birthdate.printInfo();
     }
 
+    @Override
+    public String toString() {
+        return "Name - %s, surname - %s, date - %s%n".formatted(name, surname, birthdate.toString());
+    }
+
     public Date getBirthday() {
         return birthdate;
     }
+
 
     public void setBirthday(Date birthday) {
         this.birthdate = birthdate;

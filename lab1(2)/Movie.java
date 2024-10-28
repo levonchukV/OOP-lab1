@@ -34,6 +34,15 @@ public class Movie {
         }
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (Screening screening : screenings) {
+            sb.append(screening.toString()).append("\n");
+        }
+        return "Title: %S genre - %s, director -%s Screenings: %s%n".formatted(title, genre, director.toString(), sb.toString());
+    }
+
     public void printShortInfo(){
         System.out.printf("Short screening info: title - %s%n Director name - %s%n", title, director.getName());
         double sum = 0;

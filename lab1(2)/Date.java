@@ -15,6 +15,11 @@ public class Date {
         this.year = year;
     }
 
+    @Override
+    public String toString() {
+        return day + "/" + month + "/" + year;
+    }
+
     public void printInfo() {
         System.out.printf("Date info: %s.%s.%s%n", this.year, this.month, this.day);
     }
